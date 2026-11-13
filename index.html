@@ -1,0 +1,26 @@
+Live Server: Open with Live Server<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rodízio de Mirantes — gastronomia e experiências em Luanda.">
+  <title>Rodízio de Mirantes | Luanda</title>
+  <link rel="icon" href="assets/logo-rodizio.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="config.js"></script><script defer src="site.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><img src="assets/logo-rodizio.jpg" alt="Logotipo Rodízio de Mirantes"><span>RODÍZIO <b>DE MIRANTES</b><small>LUANDA · ANGOLA</small></span></a>
+<nav><a href="#inicio">Início</a><a href="#menu">Menu</a><a href="#sobre">Sobre</a><a href="#contactos">Contactos</a></nav>
+<a class="btn btn-gold" href="#reservar">Reservar mesa</a></header>
+<main>
+<section class="hero" id="inicio"><div class="hero-shade"></div><div class="hero-content"><p class="eyebrow">UMA EXPERIÊNCIA À MESA</p><h1>Sabores que<br><em>ficam na memória.</em></h1><p>Descubra uma experiência gastronómica especial no Rodízio de Mirantes.</p><div class="actions"><a class="btn btn-gold" href="#menu">Explorar menu</a><a class="btn btn-outline" href="#reservar">Fazer reserva</a></div></div></section>
+<section class="intro section" id="sobre"><p class="eyebrow">BEM-VINDO</p><h2>Uma mesa para bons momentos</h2><p>Visite o Rodízio de Mirantes, na Avenida Pedro de Castro Van-Dúnem Loy, em Luanda. Consulte o nosso menu e reserve a sua mesa.</p></section>
+<section class="section menu-section" id="menu"><div class="section-head"><div><p class="eyebrow">SABORES DA CASA</p><h2>O nosso menu</h2></div><span class="muted">Preços em Kwanza (Kz)</span></div><div id="categories" class="filters"></div><div id="products" class="product-grid"><p class="muted">A carregar menu...</p></div></section>
+<section class="reservation section" id="reservar"><div><p class="eyebrow">A SUA MESA ESPERA POR SI</p><h2>Faça a sua reserva</h2><p>Preencha os dados e envie o pedido. A equipa entrará em contacto para confirmar a disponibilidade.</p><p class="muted">Telefone/WhatsApp: +244 923 639 940</p></div>
+<form id="reservation-form" class="panel"><label>Nome completo<input name="customer_name" required maxlength="100"></label><label>Telefone<input name="phone" required placeholder="+244..." maxlength="30"></label><div class="two"><label>Data<input type="date" name="reservation_date" required></label><label>Hora<input type="time" name="reservation_time" required></label></div><label>Número de pessoas<input type="number" name="guests" min="1" max="30" value="2" required></label><label>Observações<textarea name="notes" rows="3" maxlength="500" placeholder="Alguma informação adicional?"></textarea></label><button class="btn btn-gold full" type="submit">Enviar pedido de reserva</button><p id="reservation-status" class="form-status" aria-live="polite"></p></form></section>
+<section class="contact section" id="contactos"><p class="eyebrow">ESTAMOS À SUA ESPERA</p><h2>Contacte-nos</h2><div class="contact-grid"><div><b>Morada</b><p>Av. Pedro de Castro Van-Dúnem Loy, Luanda, Angola</p></div><div><b>Telefone e WhatsApp</b><p>+244 923 639 940</p></div><div><b>Email</b><p><a href="mailto:reservas@rodizio.co.ao">reservas@rodizio.co.ao</a></p></div><div><b>Horário</b><p>Confirme o horário diretamente com o restaurante.</p></div></div><a class="btn btn-outline-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Rodizio+de+Mirantes+Luanda">Ver localização</a></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><img src="assets/logo-rodizio.jpg" alt=""><span>RODÍZIO <b>DE MIRANTES</b><small>LUANDA · ANGOLA</small></span></a><p>© <span id="year"></span> Rodízio de Mirantes. Todos os direitos reservados.</p><a href="admin.html">Área administrativa</a></footer>
+<a class="whatsapp" href="https://wa.me/244923639940?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Rod%C3%ADzio%20de%20Mirantes." target="_blank" rel="noopener" aria-label="Contactar pelo WhatsApp">✆</a>
+</body></html>
